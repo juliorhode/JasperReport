@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporte" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d8debff5-1051-493c-9239-4072b7daa104">
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[IlNBTFVEIi4iQ01fQ0lUQV9NRURJQ0EiIEFTICw3MSw2Miw0OTY0YWZmMC04NzcyLTQyMDItOTIz
+MC01ODlhYzliZTVkZjQ7IlBFUlNPTkFMIi4iTUVESUNPUyIgQVMgLDI3Niw2Miw4NjEzMGMzMy04
+MmNkLTRhZTEtYWFlYS0xNjk0YzUyYmZlOWY7
+]]>
+	</property>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="DESA3"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="683"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="303"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="275"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="718"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM "PERSONAL"."MEDICOS"
+	INNER JOIN "SALUD"."CM_CITA_MEDICA" ON 
+	 "SALUD"."CM_CITA_MEDICA"."CI_ESPECIALISTA" = "PERSONAL"."MEDICOS"."CEDULA"]]>
+	</queryString>
+	<field name="CEDULA" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CEDULA"/>
+	</field>
+	<field name="SITUACION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="SITUACION"/>
+	</field>
+	<field name="NOMBRE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NOMBRE"/>
+	</field>
+	<field name="APELLIDO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="APELLIDO"/>
+	</field>
+	<field name="MSAS" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="MSAS"/>
+	</field>
+	<field name="COLEGIO_MEDICO" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="COLEGIO_MEDICO"/>
+	</field>
+	<field name="FECHA_DESDE_SUP" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FECHA_DESDE_SUP"/>
+	</field>
+	<field name="FECHA_HASTA_SUP" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FECHA_HASTA_SUP"/>
+	</field>
+	<field name="IN_CLASE_MEDICO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_CLASE_MEDICO"/>
+	</field>
+	<field name="IN_TI_MEDICO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_TI_MEDICO"/>
+	</field>
+	<field name="IN_TURNO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_TURNO"/>
+	</field>
+	<field name="IN_ESPECIALIDAD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_ESPECIALIDAD"/>
+	</field>
+	<field name="NU_SOLICITUD" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="NU_SOLICITUD"/>
+	</field>
+	<field name="ST_CITA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="ST_CITA"/>
+	</field>
+	<field name="CI_EMPLEADO" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CI_EMPLEADO"/>
+	</field>
+	<field name="NB_EMPLEADO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NB_EMPLEADO"/>
+	</field>
+	<field name="CI_FAMILIAR" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CI_FAMILIAR"/>
+	</field>
+	<field name="NB_FAMILIAR" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NB_FAMILIAR"/>
+	</field>
+	<field name="IN_TI_CITA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_TI_CITA"/>
+	</field>
+	<field name="COLUMN_20" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="IN_ESPECIALIDAD"/>
+	</field>
+	<field name="FE_CITA" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FE_CITA"/>
+	</field>
+	<field name="HH_CITA" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HH_CITA"/>
+	</field>
+	<field name="CI_ESPECIALISTA" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="CI_ESPECIALISTA"/>
+	</field>
+	<field name="NB_TI_SOLICITUD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NB_TI_SOLICITUD"/>
+	</field>
+	<field name="FE_ATENCION" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FE_ATENCION"/>
+	</field>
+	<field name="HH_ATENCION" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HH_ATENCION"/>
+	</field>
+	<field name="NB_USUARIO_MODIFIC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="NB_USUARIO_MODIFIC"/>
+	</field>
+	<field name="TX_DATO_MODIFICADO" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="TX_DATO_MODIFICADO"/>
+	</field>
+	<field name="FE_SOLICITUD" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.label" value="FE_SOLICITUD"/>
+	</field>
+	<field name="HH_SOLICITUD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="HH_SOLICITUD"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<columnHeader>
+		<band height="295" splitType="Stretch">
+			<staticText>
+				<reportElement x="165" y="49" width="270" height="14" uuid="42f2923d-934e-4ee1-b3fa-38b7a72a265e"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GERENCIA DE SEGURIDAD Y SALUD EN EL TRABAJO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="180" y="63" width="240" height="12" uuid="26ab3351-ee54-45e3-9420-6a5c2c25beee"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEMA DE AUTOGESTIÓN DE CITAS MÉDICAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="504" y="5" width="30" height="10" uuid="6db06ab7-97a5-4e2f-9502-fd674886f314"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="529" y="5" width="30" height="10" uuid="217b5071-5fc0-468b-9d9c-5cb8d7ec252f"/>
+				<textElement textAlignment="Left">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" of " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="108" width="554" height="30" uuid="9d95c6d8-414e-4021-b48a-035412df157c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AGENDA DE CITAS PROGRAMADAS]]></text>
+			</staticText>
+			<rectangle radius="5">
+				<reportElement x="0" y="145" width="555" height="60" uuid="139868c0-f4bd-4a01-9235-a129a3e42eb3"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="41" y="167" width="48" height="16" uuid="feca7014-7aba-409e-8231-1b63e0f261ca"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="89" y="167" width="90" height="16" uuid="9b58766f-c9db-42a9-ae1c-551cf7b0fa03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.text.SimpleDateFormat("dd/MM/YYYY").format($F{FE_CITA})]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="310" y="167" width="80" height="16" uuid="0e745ce5-46bb-4473-97f9-08b99c01a273"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Especialista]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="256" width="139" height="20" uuid="e46c04eb-ab0f-4b08-ab5f-0b9ce43f1578">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5100ec3c-db67-4791-8136-6afa78032824"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empleado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="211" y="256" width="139" height="20" uuid="a8367d51-7143-4358-bbdf-1fd9137dbfd6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4db33d31-a9dd-4ca9-9b50-b470e2b78ff9"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Familiar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="256" width="50" height="20" uuid="214112b2-8a89-4853-a38f-20feee3c726f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="79718aca-6e8f-44fd-a030-c8337739f4e2"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hora]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="256" width="135" height="20" uuid="c221cc56-6f04-44cf-a38d-3cafbbfaacb3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="26d1d4ce-b2eb-40b0-b91b-a4db12923536"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tipo Solicitud]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="278" width="555" height="1" uuid="dae19604-a411-42e3-89a4-ffd4808f0aaf"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="256" width="50" height="20" uuid="45ebdc7c-cc96-4fdf-a8d0-8da824167b48">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c61070ff-9c07-4104-adea-70a69923be1a"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Solicitud]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="390" y="167" width="130" height="15" uuid="28b9fc11-4a26-4af0-921e-6ae32e667461"/>
+				<textFieldExpression><![CDATA[$F{APELLIDO} + ", " +$F{NOMBRE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="50" height="20" uuid="b1198819-dcb5-42db-aaca-8e24ec82e525">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e09647ab-0554-4c46-852d-2712e6b85c89"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NU_SOLICITUD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="61" y="0" width="139" height="20" uuid="1888faf5-14f2-46ac-93ea-53e43ea0f8fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b7795183-e2e9-435e-be87-055f3f4129d1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NB_EMPLEADO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="211" y="0" width="139" height="20" uuid="d39b0421-fd38-4bc3-a1d8-b0cb5edee417">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="27b28e5e-97b6-41fc-8068-06631e5a3cac"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NB_FAMILIAR}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="50" height="20" uuid="99454589-c334-45d4-87fa-b2aeed0aca2a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c9877bd2-aa78-470a-aafc-e4fdaae572b1"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{HH_CITA}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="420" y="0" width="135" height="20" uuid="d04a9e0a-7244-4f32-8c3a-d5692fed44db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e5fd991c-ef12-49bb-bd4a-8734794303c0"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{NB_TI_SOLICITUD}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
